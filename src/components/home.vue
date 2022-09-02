@@ -16,7 +16,7 @@
 </template>
 
 <script> 
-import HomeAside from './common/HomeAside.vue';
+import HomeAside from './common/HomeAside';
 import HomeHeader from './common/HomeHeader.vue';
 export default {
   components: { HomeAside,HomeHeader },
