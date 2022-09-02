@@ -6,10 +6,15 @@ import router from './router'
 import UUID from "vue-uuid";
 import ElementUI from 'element-ui' //element-ui的全部组件
 import 'element-ui/lib/theme-chalk/index.css'//element-ui的css
+import { post, get } from "./http/axiosConfig";
 
 
 Vue.use(UUID);
 Vue.use(ElementUI) //使用elementUI
+//将封装后的请求方法注入至Vue实例原型
+Vue.prototype.$get = get;
+Vue.prototype.$post = post;
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
