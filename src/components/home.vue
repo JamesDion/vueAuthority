@@ -15,8 +15,8 @@
     </div>
 </template>
 
-<script> 
-import HomeAside from './common/HomeAside';
+<script>
+import HomeAside from './common/HomeAside.vue';
 import HomeHeader from './common/HomeHeader.vue';
 export default {
   components: { HomeAside,HomeHeader },
@@ -25,10 +25,10 @@ export default {
     return {
 
     };
-  
+
   },
   methods:{
-      
+
   },
 
   beforeCreate(){
@@ -43,12 +43,12 @@ export default {
   beforeMount(){
     console.log("beforeMount...");
   },
- 
+
   mounted() {
     // 页面加载完成，需要执行的方法
     //  this.$nextTick(function(){
         // 调用需要执行的方法
-    // })     
+    // })
   }
 };
 </script>
@@ -60,14 +60,14 @@ export default {
     text-align: center;
     line-height: 60px;
   }
-  
+
   .el-aside {
     background-color: #D3DCE6;
     color: #333;
     text-align: center;
     line-height: 100vh; /** 相对于视框的高度 */
   }
-  
+
   .el-main {
     background-color: #E9EEF3;
     color: #333;
@@ -80,12 +80,12 @@ export default {
   body > .el-container {
     margin-bottom: 40px;
   }
-  
+
   .el-container:nth-child(5) .el-aside,
   .el-container:nth-child(6) .el-aside {
     line-height: 260px;
   }
-  
+
   .el-container:nth-child(7) .el-aside {
     line-height: 320px;
   }
